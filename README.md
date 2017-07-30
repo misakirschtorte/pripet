@@ -18,6 +18,10 @@ https://gitlab.com/misakirschtorte/pripet/commits/master)
 Pripet; PRetty Icons and PrEtty fonTs
 ```
 
+## Repository
+
+https://gitlab.com/misakirschtorte/pripet
+
 
 ## Install
 
