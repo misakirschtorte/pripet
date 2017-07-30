@@ -1,0 +1,21 @@
+{
+  "name": "pripet",
+  "version": "0.0.1",
+  "description": "PRetty Icons and PrEtty fonTs",
+  "author": "Misaki Asaka <misaki.asaka@grauwoelfchen.net>",
+  "license": "(MIT OR OFL-1.1)",
+  "homepage": "https://gitlab.com/misakirschtorte/pripet",
+  "keybords": [
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/misakirschtorte/pripet.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-clean": "0.3.2",
+    "run-sequence": "1.2.2"
+  }
+}

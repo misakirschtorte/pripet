@@ -1,0 +1,42 @@
+stages:
+  - check
+  - build
+
+check-style:
+  stage: check
+  image: node:7.10.1
+  services:
+  variables:
+    NODE_ENV: development
+  before_script:
+    - node --version
+    - npm --version
+    - npm install -g eslint
+  script:
+    - eslint gulpfile.js
+  cache:
+    untracked: true
+    paths:
+      - node_modules
+  except:
+    - tags
+
+build-assets:
+  stage: build
+  image: node:7.8.0
+  services:
+  variables:
+    NODE_ENV: development
+  before_script:
+    - node --version
+    - npm --version
+    - npm install -g gulp-cli
+    - npm install
+  script:
+    - gulp
+  cache:
+    untracked: true
+    paths:
+      - node_modules
+  except:
+    - tags
