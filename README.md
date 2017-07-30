@@ -28,6 +28,20 @@ Pripet; PRetty Icons and PrEtty fonTs
 
 ## Development
 
+## Setup
+
+```zsh
+: e.g. use nodeenv
+% python3.5 -m venv venv
+% source venv/bin/activate
+(venv) % pip install --upgrade pip setuptools
+(venv) % pip install nodeenv
+(venv) % nodeenv -p --node=7.10.1
+
+(venv) % npm i -g npm
+(venv) % npm i
+```
+
 ### Style check
 
 ```zsh
