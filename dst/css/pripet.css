@@ -1,0 +1,36 @@
+/**
+ * Pripet Webfont
+ *
+ */
+@font-face {
+  font-family: 'Pripet';
+  src: url('../font/pripet.eot?1502635531466');
+  src: url('../font/pripet.eot?#iefix-1502635531466') format('embedded-opentype'),
+    url('../font/pripet.woff2?1502635531466') format('woff2'),
+    url('../font/pripet.woff?1502635531466') format('woff'),
+    url('../font/pripet.ttf?1502635531466') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+.icon[class^='icon-']:before,
+.icon[class*=' icon-']:before {
+  font-family: 'Pripet';
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* glyphs list */
+
+.icon.icon-wolf-paw:before {
+  content: '\ea01';
+}
