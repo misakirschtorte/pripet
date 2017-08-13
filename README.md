@@ -32,7 +32,7 @@ https://gitlab.com/misakirschtorte/pripet
 
 ## Development
 
-## Setup
+### Setup
 
 ```zsh
 : e.g. use nodeenv
