@@ -30,9 +30,13 @@ https://gitlab.com/misakirschtorte/pripet
 ```
 
 
-## Development
+## Dependencies
 
-### Setup
+* Node.js `>= 7.10.1`
+* (Python 3) (for development, optional)
+
+
+## Development
 
 ```zsh
 : e.g. use nodeenv
@@ -41,25 +45,48 @@ https://gitlab.com/misakirschtorte/pripet
 (venv) % pip install --upgrade pip setuptools
 (venv) % pip install nodeenv
 (venv) % nodeenv -p --node=7.10.1
+```
 
+### Icons & Fonts
+
+#### Setup
+
+```zsh
 (venv) % npm i -g npm
 (venv) % npm i
 ```
 
-### Style check
+#### Style check
 
 ```zsh
 : check gulpfile.js
-% npm install -g eslint
-% eslint gulpfile.js
+(venv) % npm install -g eslint
+(venv) % eslint gulpfile.js
 ```
 
-### Build
+#### Build
 
 ```zsh
 : build assets
-% npm install -g gulp-cli
-% gulp
+(venv) % npm install -g gulp-cli
+(venv) % gulp  # or `make build`
+```
+
+
+### Application
+
+This python server application serves gylphs as example.
+
+#### Setup
+
+```zsh
+(venv) % make setup
+```
+
+#### Serve
+
+```zsh
+(venv) % make serve
 ```
 
 
@@ -70,7 +97,7 @@ Pripet; Copyright (c) 2017 Misaki Asaka
 This program is free software: You can redistribute it and/or modify it
 under the terms of the MIT or OFL-1.1 License.
 
-(Pripet's icons are licensed under the MIT Licence and its fonts are under
+(Pripet's icon images are licensed under the MIT Licence and fonts are under
 the SIL Open Font License 1.1)
 
 See [LICENSE](LICENSE).

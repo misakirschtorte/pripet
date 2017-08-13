@@ -12,10 +12,17 @@
     "type": "git",
     "url": "https://gitlab.com/misakirschtorte/pripet.git"
   },
+  "scripts": {
+    "iconfont": "gulp"
+  },
   "dependencies": {},
   "devDependencies": {
-    "gulp": "3.9.1",
+    "gulp": "^3.9.1",
     "gulp-clean": "0.3.2",
-    "run-sequence": "1.2.2"
+    "gulp-consolidate": "^0.1.2",
+    "gulp-copy": "^1.0.0",
+    "gulp-iconfont": "^5.0.1",
+    "run-sequence": "^1.2.2",
+    "underscore": "^1.8.3"
   }
 }

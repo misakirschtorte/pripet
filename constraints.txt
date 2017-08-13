@@ -1,0 +1,9 @@
+Flask==0.12.1
+
+# development
+flake8==3.2.1
+flake8_docstrings==1.0.3
+pylint==1.6.5
+
+# production
+gunicorn==19.7.1

@@ -1,0 +1,22 @@
+{% block header %}
+<title><%= fontName %> - Glyphs</title>
+<link rel="stylesheet" href="{{url_for('static', filename='dst/css/pripet.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+{% endblock %}
+
+{% block body %}
+<div class="wrapper">
+  <h1><%= fontName %> - Glyphs</h1>
+  <div class="usage">
+    <pre>&lt;i class="icon icon-name"&gt;&lt;/i&gt;
+&lt;span class="icon icon-name"&gt;&lt;/span&gt;</pre>
+  </div>
+  <ul class="glyphs">
+    <% _.each(glyphs, function(icon){ %><li>
+      <i class="icon icon-<%= icon.name %>"></i>
+      <code>\<%= icon.unicode[0].charCodeAt(0).toString(16) %></code>
+      <p class="name"><%= icon.name %></p>
+    </li><% }) %>
+  </ul>
+</div>
+{% endblock %}
